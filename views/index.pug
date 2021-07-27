@@ -1,0 +1,18 @@
+doctype=html
+ 
+html
+   head
+      title A Simple Input Form
+   body 
+      h1 Input Your Name and Phone Number
+ 
+      block inputForm
+         form(id="info" action="/submit" method="post")
+            div Name: 
+               input(type="text", name="name", value="", placeholder="Name")
+            br
+            div Phone Number:  
+               input(type="text", name="phone", value="", placeholder="Phone Number")
+            br
+            input(type="submit" value="Submit")
+ 

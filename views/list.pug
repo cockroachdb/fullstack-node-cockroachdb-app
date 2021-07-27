@@ -1,0 +1,15 @@
+doctype=html
+ 
+html
+   head
+      title Your Contacts
+   body
+    h1 Contact List
+    table(style='width:100%', border='1')
+      tr
+         th Name
+         th Phone
+      each val in people
+         tr
+            td #{val.name} 
+            td #{val.phoneNumber}
